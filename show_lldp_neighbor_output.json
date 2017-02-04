@@ -1,0 +1,34 @@
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {},
+    {
+      "tablesLastChangeTime": 1483721367.4560423,
+      "tablesAgeOuts": 0,
+      "tablesInserts": 3,
+      "lldpNeighbors": [
+        {
+          "ttl": 120,
+          "neighborDevice": "HP830_LSW",
+          "neighborPort": "GigabitEthernet1/0/12",
+          "port": "Ethernet47"
+        },
+        {
+          "ttl": 120,
+          "neighborDevice": "HP_5500EI",
+          "neighborPort": "GigabitEthernet2/0/22",
+          "port": "Ethernet48"
+        },
+        {
+          "ttl": 120,
+          "neighborDevice": "HP_5500EI",
+          "neighborPort": "GigabitEthernet1/0/24",
+          "port": "Management1"
+        }
+      ],
+      "tablesDeletes": 0,
+      "tablesDrops": 0
+    }
+  ],
+  "id": "EapiExplorer-1"
+}
