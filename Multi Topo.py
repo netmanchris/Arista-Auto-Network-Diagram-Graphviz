@@ -5,7 +5,7 @@ from graphviz import Digraph
 pyeapi.load_config('.eapi.conf')
 
 #test devices in lab see .eapi.conf file in same directory for connection parameters
-switches = ['arista249', 'arista250']
+switches = ['Arista249', 'Arista250']
 
 
 
@@ -77,19 +77,19 @@ my_topo = clean_full_list(full)
 #Creating the Topo graphic
 
 def make_topology(network_name, mytopo):
-    """
-    Function to take the output of the clean_full_list function above and create the graphviz object
-    :param network_name:
-    :param mytopo:
-    :return:
-    """
     dot = Digraph(comment=network_name, format='png')
     dot.attr('node', shape='box')
+    dot.attr('node', image="./images/switch1.png")
+    dot.attr('edge', weight='10')
+    dot.attr('edge', arrowhead='none')
+    dot.body.append(r'label = "\n\nMy Prettier Network Diagram"')
+    dot.body.append('fontsize=20')
     for i in mytopo[0]:
         dot.node(i)
     for i in mytopo[1]:
         dot.edge(i[0], i[1], i[2])
     return dot
+
 
 dot = make_topology("My New Network", my_topo)
 
