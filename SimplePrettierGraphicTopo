@@ -1,0 +1,16 @@
+// My New Network
+digraph {
+	node [shape=box]
+	node [image="./images/switch1.png"]
+	edge [weight=10]
+	edge [arrowhead=none]
+label = "\n\nMy Prettier Network Diagram"
+fontsize=20
+	Arista249
+	HP830_LSW
+	HP_5500EI
+	HP_5500EI
+		Arista249 -> HP830_LSW [label="GigabitEthernet1/0/12-Ethernet47"]
+		Arista249 -> HP_5500EI [label="GigabitEthernet2/0/22-Ethernet48"]
+		Arista249 -> HP_5500EI [label="GigabitEthernet1/0/24-Management1"]
+}

@@ -1,0 +1,17 @@
+// My New Network
+digraph {
+	graph [splines=ortho]
+		node [shape=box]
+		node [image="./images/switch1.png"]
+		edge [weight=10]
+		edge [arrowhead=none]
+	label = "\n\nMy Prettier Network Diagram w/ straight edges"
+	fontsize=20
+		Arista249
+		HP830_LSW
+		HP_5500EI
+		HP_5500EI
+			Arista249 -> HP830_LSW
+			Arista249 -> HP_5500EI
+			Arista249 -> HP_5500EI
+}
